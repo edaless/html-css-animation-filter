@@ -37,14 +37,58 @@
     background: none;
 }
 
-/* .well */
+
+
 .ex-5-square{
-    transition: all 1s linear 0s;
-    z-index:300;
+    transition: all 2s linear 0s;
 }
+
 
 .ex-5-square:hover{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;    
+}
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;    
 }
 
+
+.ex-6-img:hover{
+    filter:grayscale(1);
+}
+
+
+
+
+.ex-7-img{
+    transition: all 1s linear 0s;
+}
+
+.ex-7-img:hover{
+    filter:invert(1) hue-rotate(160deg);
+}
+
+
+
+.ex-8-img{
+    transition: all 3s linear 0s;
+}
+
+.ex-8-img:hover{
+    filter:hue-rotate(90deg) brightness(0.5);
+    border-radius: 15px;
+}
+
+
+.ex-9-img{
+    transition: all 1s linear 0s;
+}
+
+.ex-9-img:hover{
+    filter:hue-rotate(90deg) brightness(0.5);
+    border-radius: 15px;
+    height: 80px;  
+    /* width: auto; */
+
+}
