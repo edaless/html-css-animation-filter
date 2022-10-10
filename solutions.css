@@ -40,17 +40,16 @@
 
 
 .ex-5-square{
+    width: 20px;
+    height: 20px;
     transition: all 2s linear 0s;
+    overflow: hidden;
 }
 .ex-5-square:hover{
     width: 130px;
     height: 130px;    
 
 }
-/* 
-.ex-5-square:hover .col-xs-12 > .well{
-    padding:0px;    
-} */
 /* non so come impedire che la riga grigia
 si allarghi,
 neanche che cresca in tutte e quattro i versi.
@@ -105,16 +104,14 @@ neanche che cresca in tutte e quattro i versi.
 
 
 .ex-10-icon{
-    animation-name: mov-10;
-    animation-duration: 9000s;
-
+    animation: mov-10 1s linear infinite;
 }
 @keyframes mov-10 { 
   
     100%{
-        transform: rotate( -3600000deg) ;
+        transform: rotate( -360deg) ;
     }
-    /* non penso sia la più nobile delle soluzioni */
+
 }
 
 
@@ -162,9 +159,6 @@ neanche che cresca in tutte e quattro i versi.
     }
     
 }
-.ex-13-top-white{
-    position:absolute;
-}
 
 
 .ex-13-button{
@@ -174,8 +168,8 @@ neanche che cresca in tutte e quattro i versi.
     position: absolute;
 }
 .ex-13-button:hover .ex-13-top-white{
-    animation-name: mov-13-top;
-    animation-duration: 5s;
+    animation: mov-13-top 3s linear;
+    animation-iteration-count: 90;
 
 }
 @keyframes mov-13-top { 
@@ -209,8 +203,8 @@ neanche che cresca in tutte e quattro i versi.
     position: absolute;
 }
 .ex-13-button:hover .ex-13-bottom-white{
-    animation-name: mov-13-bottom;
-    animation-duration: 5s;
+    animation: mov-13-bottom 3s linear;
+    animation-iteration-count: 90;
 
 }
 @keyframes mov-13-bottom { 
